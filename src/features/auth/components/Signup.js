@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom';
 
 export default function Signup() {
   const dispatch = useDispatch();
-  const { register, handleSubmit, watch, formState: { errors } } = useForm();
-  const user = useSelector(selectLoggedInUser)
-  console.log(errors)
+  const { register, handleSubmit, formState: { errors } } = useForm();
+  
+  console.log(errors);
 
 
   return (

@@ -6,6 +6,7 @@ export function createUser(userData) {
     headers: {'content-Type': 'application/json'}
    })
    const data = await response.json()
+   // TODO: on server it will only return some info of user (mot de passe incorrect)
    resolve({data})
   }
   );
