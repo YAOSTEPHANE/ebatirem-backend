@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react'
 import { StarIcon } from '@heroicons/react/20/solid'
 import { RadioGroup } from '@headlessui/react'
 import { useSelector, useDispatch } from 'react-redux';
-import { selectProductById, fetchProductByIdAsync } from './../productSlice';
+import { selectProductById, fetchProductByIdAsync } from '../../product/productSlice';
 import { useParams } from 'react-router-dom';
-import { discountedPrice } from './../../../app/constants';
-import { selectLoggedInUser } from './../../auth/authSlice';
-import { addToCartAsync, selectItems } from './../../cart/cartSlice';
+import { selectLoggedInUser } from '../../auth/authSlice';
+import { addToCartAsync } from '../../cart/cartSlice';
+import {discountedPrice} from '../../../app/constants';
 // TODO: In server data we will add colors, sizes, highlights. to each product
 
 const colors = [
@@ -40,11 +40,10 @@ function classNames(...classes) {
 
 
 // TODO:Loading UI
-export default function ProductDetail() {
+export default function AdminProductDetail() {
   const [selectedColor, setSelectedColor] = useState(colors[0])
   const [selectedSize, setSelectedSize] = useState(sizes[2])
   const user = useSelector(selectLoggedInUser)
-  const items = useSelector(selectItems)
   const product = useSelector(selectProductById);
   const dispatch = useDispatch()
   const params = useParams()
@@ -53,14 +52,9 @@ export default function ProductDetail() {
 
   const handleCart = (e) => {
     e.preventDefault();
-    if(items.findIndex(item=>item.productId===product.id)<0){
-      const newItem = { ...product, productId:product.id, quantity: 1, user: user.id }
-      delete newItem['id'];
-    dispatch(addToCartAsync(newItem))
-    } else{
-    console.log('already added')
-    }
-    
+    const newItem = { ...product, quantity: 1, user: user.id }
+    delete newItem['id'];
+  dispatch(addToCartAsync(newItem))
   }
   useEffect(() => {
     dispatch(fetchProductByIdAsync(params.id));
@@ -143,7 +137,7 @@ export default function ProductDetail() {
           <div className="mt-4 lg:row-span-3 lg:mt-0">
             <h2 className="sr-only">Information du Produit</h2>
             <p className="text-3xl line-through tracking-tight text-gray-900">{product.price} FCFA</p>
-             <p className="text-3xl tracking-tight text-gray-900">{discountedPrice(product)} FCFA</p>
+            <p className="text-3xl tracking-tight text-gray-900">{discountedPrice(product)} FCFA</p>
 
             {/* Reviews */}
             <div className="mt-6">
@@ -169,10 +163,10 @@ export default function ProductDetail() {
             <form className="mt-10">
               {/* Colors */}
               <div>
-                <h3 className="text-sm font-medium text-gray-900">Couleur</h3>
+                <h3 className="text-sm font-medium text-gray-900">Color</h3>
 
                 <RadioGroup value={selectedColor} onChange={setSelectedColor} className="mt-4">
-                  <RadioGroup.Label className="sr-only">Choisir la couleur</RadioGroup.Label>
+                  <RadioGroup.Label className="sr-only">Choose a color</RadioGroup.Label>
                   <div className="flex items-center space-x-3">
                     {colors.map((color) => (
                       <RadioGroup.Option

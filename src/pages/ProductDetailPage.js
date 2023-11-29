@@ -4,9 +4,8 @@ function ProductDetailPage() {
     return (
         <div>
             <NavBar>
-<>
+
     <ProductDetail></ProductDetail>
-</ >
             </NavBar>
         </div>
     );

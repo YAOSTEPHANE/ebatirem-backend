@@ -4,9 +4,9 @@
       "id": 1,
       "title": "iPhone 9",
       "description": "An apple mobile which is nothing like apple",
-      "price": 549,
-      "discountPercentage": 12.96,
-      "rating": 4.69,
+      "price": 777,
+      "discountPercentage": 25,
+      "rating": 0,
       "stock": 94,
       "brand": "Apple",
       "category": "smartphones",
@@ -41,16 +41,21 @@
       "id": 3,
       "title": "Samsung Universe 9",
       "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
-      "price": 1249,
-      "discountPercentage": 15.46,
-      "rating": 4.09,
-      "stock": 36,
+      "price": 25000,
+      "discountPercentage": 15,
+      "rating": 0,
+      "stock": 0,
       "brand": "Samsung",
       "category": "smartphones",
       "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
       "images": [
-        "https://i.dummyjson.com/data/products/3/1.jpg"
-      ]
+        "https://i.dummyjson.com/data/products/3/1.jpg",
+        "https://i.dummyjson.com/data/products/3/1.jpg",
+        "https://i.dummyjson.com/data/products/3/1.jpg",
+        "https://i.dummyjson.com/data/products/3/1.jpg",
+        "https://i.dummyjson.com/data/products/3/thumbnail.jpg"
+      ],
+      "deleted": true
     },
     {
       "id": 4,
@@ -1856,6 +1861,25 @@
         "https://i.dummyjson.com/data/products/100/3.jpg",
         "https://i.dummyjson.com/data/products/100/thumbnail.jpg"
       ]
+    },
+    {
+      "title": "Acer",
+      "description": "Acer",
+      "brand": "{brand.value}",
+      "category": "{category.value}",
+      "price": "250.000",
+      "discountPercentage": "10",
+      "stock": "10",
+      "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
+      "images": [
+        "https://i.dummyjson.com/data/products/6/thumbnail.png",
+        "https://i.dummyjson.com/data/products/6/thumbnail.png",
+        "https://i.dummyjson.com/data/products/6/thumbnail.png",
+        "https://i.dummyjson.com/data/products/6/thumbnail.png",
+        "https://i.dummyjson.com/data/products/6/thumbnail.png"
+      ],
+      "rating": 0,
+      "id": 101
     }
   ],
   "brands": [
@@ -2356,7 +2380,1201 @@
     {
       "email": "batirem01@gmail.com",
       "password": "Yk48976031",
+      "role": "user",
+      "addresses": [
+        {
+          "name": "yao kouassi steph",
+          "email": "kouassistephane489@gmail.com",
+          "country": "Abobo",
+          "street": "Cocody ",
+          "city": "bonoumin",
+          "phone": "0748976031",
+          "pinCode": "0170047785",
+          "commune": "bonoumin",
+          "sous-quartier": "riviera 3",
+          "numero": "0748976031",
+          "second numero": "0170047785"
+        },
+        {
+          "name": "STEPHANE YAO",
+          "email": "stephane@gmail.com",
+          "country": "Abobo",
+          "street": "sogefia",
+          "city": "plaque 1",
+          "phone": "055525622",
+          "pinCode": "551451454"
+        }
+      ],
       "id": 1
+    },
+    {
+      "email": "demo@gmail.com",
+      "password": "Qwerty123",
+      "role": "user",
+      "addresses": [
+        {
+          "name": "stephane",
+          "email": "batirem@gmail.com",
+          "country": "Cocody",
+          "street-address": "",
+          "city": "bonoumin",
+          "phone": "04555557",
+          "pinCode": "11110000",
+          "street": "riviera"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "email": "batirem@gmail.com",
+      "password": "As48976031",
+      "role": "user",
+      "addresses": [],
+      "id": 9
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "Ys48976031",
+      "role": "admin",
+      "addresses": [
+        {
+          "name": "yao",
+          "email": "skouassi879@gmail.com",
+          "country": "Cocody",
+          "street": "bonoumin",
+          "city": "saint famille",
+          "phone": "0748976031",
+          "pinCode": "ssssssssss"
+        }
+      ],
+      "id": 10
+    }
+  ],
+  "cart": [
+    {
+      "id": 6,
+      "title": "MacBook Pro",
+      "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
+      "price": 1749,
+      "discountPercentage": 11.02,
+      "rating": 4.57,
+      "stock": 83,
+      "brand": "Apple",
+      "category": "laptops",
+      "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
+      "images": [
+        "https://i.dummyjson.com/data/products/6/1.png",
+        "https://i.dummyjson.com/data/products/6/2.jpg",
+        "https://i.dummyjson.com/data/products/6/3.png",
+        "https://i.dummyjson.com/data/products/6/4.jpg"
+      ],
+      "quantity": 1,
+      "user": 15
+    },
+    {
+      "id": 3,
+      "title": "Samsung Universe 9",
+      "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+      "price": 1249,
+      "discountPercentage": 15.46,
+      "rating": 4.09,
+      "stock": 36,
+      "brand": "Samsung",
+      "category": "smartphones",
+      "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/3/1.jpg"
+      ],
+      "quantity": 1,
+      "user": 15
+    },
+    {
+      "id": 1,
+      "title": "iPhone 9",
+      "description": "An apple mobile which is nothing like apple",
+      "price": 549,
+      "discountPercentage": 12.96,
+      "rating": 4.69,
+      "stock": 94,
+      "brand": "Apple",
+      "category": "smartphones",
+      "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/1/1.jpg",
+        "https://i.dummyjson.com/data/products/1/2.jpg",
+        "https://i.dummyjson.com/data/products/1/3.jpg",
+        "https://i.dummyjson.com/data/products/1/4.jpg",
+        "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+      ],
+      "quantity": 1,
+      "user": 15
+    },
+    {
+      "id": 8,
+      "title": "Microsoft Surface Laptop 4",
+      "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+      "price": 1499,
+      "discountPercentage": 10.23,
+      "rating": 4.43,
+      "stock": 68,
+      "brand": "Microsoft Surface",
+      "category": "laptops",
+      "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/8/1.jpg",
+        "https://i.dummyjson.com/data/products/8/2.jpg",
+        "https://i.dummyjson.com/data/products/8/3.jpg",
+        "https://i.dummyjson.com/data/products/8/4.jpg",
+        "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+      ],
+      "quantity": 1,
+      "user": 15
+    },
+    {
+      "title": "Samsung Universe 9",
+      "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+      "price": 1249,
+      "discountPercentage": 15.46,
+      "rating": 4.09,
+      "stock": 36,
+      "brand": "Samsung",
+      "category": "smartphones",
+      "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/3/1.jpg"
+      ],
+      "quantity": 4,
+      "id": 13
+    },
+    {
+      "title": "Samsung Universe 9",
+      "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+      "price": 1249,
+      "discountPercentage": 15.46,
+      "rating": 4.09,
+      "stock": 36,
+      "brand": "Samsung",
+      "category": "smartphones",
+      "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/3/1.jpg"
+      ],
+      "quantity": 1,
+      "id": 16
+    },
+    {
+      "title": "HP Pavilion 15-DK1056WM",
+      "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
+      "price": 1099,
+      "discountPercentage": 6.18,
+      "rating": 4.43,
+      "stock": 89,
+      "brand": "HP Pavilion",
+      "category": "laptops",
+      "thumbnail": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
+      "images": [
+        "https://i.dummyjson.com/data/products/10/1.jpg",
+        "https://i.dummyjson.com/data/products/10/2.jpg",
+        "https://i.dummyjson.com/data/products/10/3.jpg",
+        "https://i.dummyjson.com/data/products/10/thumbnail.jpeg"
+      ],
+      "quantity": 2,
+      "id": 17
+    },
+    {
+      "title": "Chappals & Shoe Ladies Metallic",
+      "description": "Womens Chappals & Shoe Ladies Metallic Tong Thong Sandal Flat Summer 2020 Maasai Sandals",
+      "price": 23,
+      "discountPercentage": 2.62,
+      "rating": 4.72,
+      "stock": 107,
+      "brand": "Maasai Sandals",
+      "category": "womens-shoes",
+      "thumbnail": "https://i.dummyjson.com/data/products/49/thumbnail.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/49/1.jpg",
+        "https://i.dummyjson.com/data/products/49/2.jpg",
+        "https://i.dummyjson.com/data/products/49/3.webp",
+        "https://i.dummyjson.com/data/products/49/thumbnail.jpg"
+      ],
+      "quantity": 1,
+      "id": 18
+    },
+    {
+      "title": "HOT SALE IN EUROPE electric racing motorcycle",
+      "description": "HOT SALE IN EUROPE electric racing motorcycle electric motorcycle for sale adult electric motorcycles",
+      "price": 920,
+      "discountPercentage": 14.4,
+      "rating": 4.19,
+      "stock": 22,
+      "brand": "BRAVE BULL",
+      "category": "motorcycle",
+      "thumbnail": "https://i.dummyjson.com/data/products/92/thumbnail.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/92/1.jpg",
+        "https://i.dummyjson.com/data/products/92/2.jpg",
+        "https://i.dummyjson.com/data/products/92/3.jpg",
+        "https://i.dummyjson.com/data/products/92/4.jpg"
+      ],
+      "quantity": 1,
+      "id": 19
+    },
+    {
+      "title": "iPhone X",
+      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+      "price": 899,
+      "discountPercentage": 17.94,
+      "rating": 4.44,
+      "stock": 34,
+      "brand": "Apple",
+      "category": "smartphones",
+      "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/2/1.jpg",
+        "https://i.dummyjson.com/data/products/2/2.jpg",
+        "https://i.dummyjson.com/data/products/2/3.jpg",
+        "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+      ],
+      "quantity": 5,
+      "id": 20
+    },
+    {
+      "title": "MacBook Pro",
+      "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
+      "price": 1749,
+      "discountPercentage": 11.02,
+      "rating": 4.57,
+      "stock": 83,
+      "brand": "Apple",
+      "category": "laptops",
+      "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
+      "images": [
+        "https://i.dummyjson.com/data/products/6/1.png",
+        "https://i.dummyjson.com/data/products/6/2.jpg",
+        "https://i.dummyjson.com/data/products/6/3.png",
+        "https://i.dummyjson.com/data/products/6/4.jpg"
+      ],
+      "quantity": 1,
+      "user": 1,
+      "id": 21
+    }
+  ],
+  "orders": [
+    {
+      "items": [
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 10
+        },
+        {
+          "title": "Microsoft Surface Laptop 4",
+          "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+          "price": 1499,
+          "discountPercentage": 10.23,
+          "rating": 4.43,
+          "stock": 68,
+          "brand": "Microsoft Surface",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/8/1.jpg",
+            "https://i.dummyjson.com/data/products/8/2.jpg",
+            "https://i.dummyjson.com/data/products/8/3.jpg",
+            "https://i.dummyjson.com/data/products/8/4.jpg",
+            "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+          ],
+          "quantity": 2,
+          "user": 1,
+          "id": 14
+        }
+      ],
+      "totalAmount": 3897,
+      "totalItems": 3,
+      "user": {
+        "email": "batirem01@gmail.com",
+        "password": "Yk48976031",
+        "addresses": [
+          {
+            "name": "yao kouassi stephane",
+            "email": "kouassistephane489@gmail.com",
+            "country": "Cocody",
+            "street": "riviera 3",
+            "city": "bonoumin",
+            "phone": "0748976031",
+            "pinCode": "0170047785"
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "yao kouassi stephane",
+        "email": "kouassistephane489@gmail.com",
+        "country": "Cocody",
+        "street": "riviera 3",
+        "city": "bonoumin",
+        "phone": "0748976031",
+        "pinCode": "0170047785"
+      },
+      "status": "dispatched",
+      "id": 2
+    },
+    {
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 12
+        },
+        {
+          "title": "Samsung Galaxy Book",
+          "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+          "price": 1499,
+          "discountPercentage": 4.15,
+          "rating": 4.25,
+          "stock": 50,
+          "brand": "Samsung",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/7/1.jpg",
+            "https://i.dummyjson.com/data/products/7/2.jpg",
+            "https://i.dummyjson.com/data/products/7/3.jpg",
+            "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 21
+        }
+      ],
+      "totalAmount": 1779,
+      "totalItems": 2,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Qwerty123",
+        "addresses": [
+          {
+            "nom": "yao kouassi stephane",
+            "email": "kouassistephane489@gmail.com",
+            "commune": "Cocody",
+            "quartier": "riviera",
+            "sous-quartier": "bonoumin",
+            "numero": "0748976031",
+            "second numero": "0170047785"
+          },
+          {
+            "nom": "yao kouassi stephane",
+            "email": "kouassistephane489@gmail.com",
+            "commune": "Cocody",
+            "quartier": "riviera",
+            "sous-quartier": "bonoumin",
+            "numero": "0748976031",
+            "second numero": "0170047785"
+          },
+          {
+            "nom": "yao kouassi stephane",
+            "email": "demo1@gmail.com",
+            "commune": "Abobo",
+            "quartier": "qqqq",
+            "sous-quartier": "bonoumin",
+            "numero": "07489760310",
+            "second numero": "0170047785"
+          },
+          {
+            "nom": "yao k",
+            "email": "batirem01@gmail.com",
+            "commune": "Abobo",
+            "quartier": "aaaa",
+            "sous-quartier": "bonoumin",
+            "numero": "555555555555",
+            "second numero": "8888888",
+            "name": "yao k"
+          },
+          {
+            "name": "yao kouassi stephane",
+            "email": "kouassistephane489@gmail.com",
+            "commune": "Bonoua",
+            "quartier": "riviera",
+            "sous-quartier": "bonoumin",
+            "numero": "0748976031000",
+            "second numero": "0170047785",
+            "country": "Bonoua"
+          },
+          {
+            "name": "kouassi stephane",
+            "email": "demo1@gmail.com",
+            "country": "plateau",
+            "street-address": "dallas",
+            "city": "adjame",
+            "phone": "55555555555",
+            "pinCode": "5555555"
+          },
+          {
+            "name": "stephane",
+            "email": "batirem@gmail.com",
+            "country": "Cocody",
+            "street-address": "",
+            "city": "bonoumin",
+            "phone": "04555557",
+            "pinCode": "11110000",
+            "street": "riviera"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "kouassi stephane",
+        "email": "demo1@gmail.com",
+        "country": "plateau",
+        "street-address": "dallas",
+        "city": "adjame",
+        "phone": "55555555555",
+        "pinCode": "5555555"
+      },
+      "status": "delivered",
+      "id": 3
+    },
+    {
+      "items": [
+        {
+          "title": "Samsung Galaxy Book",
+          "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+          "price": 1499,
+          "discountPercentage": 4.15,
+          "rating": 4.25,
+          "stock": 50,
+          "brand": "Samsung",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/7/1.jpg",
+            "https://i.dummyjson.com/data/products/7/2.jpg",
+            "https://i.dummyjson.com/data/products/7/3.jpg",
+            "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 21
+        }
+      ],
+      "totalAmount": 1499,
+      "totalItems": 1,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Qwerty123",
+        "addresses": [
+          {
+            "nom": "yao kouassi stephane",
+            "email": "kouassistephane489@gmail.com",
+            "commune": "Cocody",
+            "quartier": "riviera",
+            "sous-quartier": "bonoumin",
+            "numero": "0748976031",
+            "second numero": "0170047785"
+          },
+          {
+            "nom": "yao kouassi stephane",
+            "email": "kouassistephane489@gmail.com",
+            "commune": "Cocody",
+            "quartier": "riviera",
+            "sous-quartier": "bonoumin",
+            "numero": "0748976031",
+            "second numero": "0170047785"
+          },
+          {
+            "nom": "yao kouassi stephane",
+            "email": "demo1@gmail.com",
+            "commune": "Abobo",
+            "quartier": "qqqq",
+            "sous-quartier": "bonoumin",
+            "numero": "07489760310",
+            "second numero": "0170047785"
+          },
+          {
+            "nom": "yao k",
+            "email": "batirem01@gmail.com",
+            "commune": "Abobo",
+            "quartier": "aaaa",
+            "sous-quartier": "bonoumin",
+            "numero": "555555555555",
+            "second numero": "8888888",
+            "name": "yao k"
+          },
+          {
+            "name": "yao kouassi stephane",
+            "email": "kouassistephane489@gmail.com",
+            "commune": "Bonoua",
+            "quartier": "riviera",
+            "sous-quartier": "bonoumin",
+            "numero": "0748976031000",
+            "second numero": "0170047785",
+            "country": "Bonoua"
+          },
+          {
+            "name": "kouassi stephane",
+            "email": "demo1@gmail.com",
+            "country": "plateau",
+            "street-address": "dallas",
+            "city": "adjame",
+            "phone": "55555555555",
+            "pinCode": "5555555"
+          },
+          {
+            "name": "stephane",
+            "email": "batirem@gmail.com",
+            "country": "Cocody",
+            "street-address": "",
+            "city": "bonoumin",
+            "phone": "04555557",
+            "pinCode": "11110000",
+            "street": "riviera"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "kouassi stephane",
+        "email": "demo1@gmail.com",
+        "country": "plateau",
+        "street-address": "dallas",
+        "city": "adjame",
+        "phone": "55555555555",
+        "pinCode": "5555555"
+      },
+      "status": "pending",
+      "id": 4
+    },
+    {
+      "items": [
+        {
+          "title": "FREE FIRE T Shirt",
+          "description": "quality and professional print - It doesn't just look high quality, it is high quality.",
+          "price": 10,
+          "discountPercentage": 14.72,
+          "rating": 4.52,
+          "stock": 128,
+          "brand": "FREE FIRE",
+          "category": "mens-shirts",
+          "thumbnail": "https://i.dummyjson.com/data/products/52/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/52/1.png",
+            "https://i.dummyjson.com/data/products/52/2.png",
+            "https://i.dummyjson.com/data/products/52/3.jpg",
+            "https://i.dummyjson.com/data/products/52/4.jpg",
+            "https://i.dummyjson.com/data/products/52/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 21
+        },
+        {
+          "title": "Round Silver Frame Sun Glasses",
+          "description": "A pair of sunglasses can protect your eyes from being hurt. For car driving, vacation travel, outdoor activities, social gatherings,",
+          "price": 19,
+          "discountPercentage": 10.1,
+          "rating": 4.94,
+          "stock": 78,
+          "brand": "Designer Sun Glasses",
+          "category": "sunglasses",
+          "thumbnail": "https://i.dummyjson.com/data/products/81/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/81/1.jpg",
+            "https://i.dummyjson.com/data/products/81/2.jpg",
+            "https://i.dummyjson.com/data/products/81/3.jpg",
+            "https://i.dummyjson.com/data/products/81/4.webp",
+            "https://i.dummyjson.com/data/products/81/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 22
+        }
+      ],
+      "totalAmount": 29,
+      "totalItems": 2,
+      "user": {
+        "email": "batirem01@gmail.com",
+        "password": "Yk48976031",
+        "addresses": [
+          {
+            "name": "yao kouassi stephane",
+            "email": "kouassistephane489@gmail.com",
+            "country": "Cocody",
+            "street": "riviera 3",
+            "city": "bonoumin",
+            "phone": "0748976031",
+            "pinCode": "0170047785"
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "yao kouassi stephane",
+        "email": "kouassistephane489@gmail.com",
+        "country": "Cocody",
+        "street": "riviera 3",
+        "city": "bonoumin",
+        "phone": "0748976031",
+        "pinCode": "0170047785"
+      },
+      "status": "pending",
+      "id": 5
+    },
+    {
+      "items": [
+        {
+          "title": "iPhone 9",
+          "description": "An apple mobile which is nothing like apple",
+          "price": 549,
+          "discountPercentage": 12.96,
+          "rating": 4.69,
+          "stock": 94,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+          ],
+          "quantity": 2,
+          "user": 1,
+          "id": 21
+        }
+      ],
+      "totalAmount": 1098,
+      "totalItems": 2,
+      "user": {
+        "email": "batirem01@gmail.com",
+        "password": "Yk48976031",
+        "addresses": [
+          {
+            "name": "yao kouassi stephane",
+            "email": "kouassistephane489@gmail.com",
+            "country": "Cocody",
+            "street": "riviera 3",
+            "city": "bonoumin",
+            "phone": "0748976031",
+            "pinCode": "0170047785"
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "yao kouassi stephane",
+        "email": "kouassistephane489@gmail.com",
+        "country": "Cocody",
+        "street": "riviera 3",
+        "city": "bonoumin",
+        "phone": "0748976031",
+        "pinCode": "0170047785"
+      },
+      "status": "pending",
+      "id": 6
+    },
+    {
+      "items": [
+        {
+          "title": "Samsung Universe 9",
+          "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+          "price": 1249,
+          "discountPercentage": 15.46,
+          "rating": 4.09,
+          "stock": 36,
+          "brand": "Samsung",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/3/1.jpg"
+          ],
+          "quantity": 1,
+          "user": 4,
+          "id": 21
+        }
+      ],
+      "totalAmount": 1249,
+      "totalItems": 1,
+      "user": {
+        "email": "demo@gmail.com",
+        "password": "Qwerty123",
+        "addresses": [
+          {
+            "name": "stephane",
+            "email": "batirem@gmail.com",
+            "country": "Cocody",
+            "street-address": "",
+            "city": "bonoumin",
+            "phone": "04555557",
+            "pinCode": "11110000",
+            "street": "riviera"
+          }
+        ],
+        "id": 4
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "stephane",
+        "email": "batirem@gmail.com",
+        "country": "Cocody",
+        "street-address": "",
+        "city": "bonoumin",
+        "phone": "04555557",
+        "pinCode": "11110000",
+        "street": "riviera"
+      },
+      "status": "pending",
+      "id": 7
+    },
+    {
+      "items": [
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 21
+        }
+      ],
+      "totalAmount": 899,
+      "totalItems": 1,
+      "user": {
+        "email": "batirem01@gmail.com",
+        "password": "Yk48976031",
+        "addresses": [
+          {
+            "name": "yao kouassi stephane",
+            "email": "kouassistephane489@gmail.com",
+            "country": "Cocody",
+            "street": "riviera 3",
+            "city": "bonoumin",
+            "phone": "0748976031",
+            "pinCode": "0170047785"
+          },
+          {
+            "name": "kouame",
+            "email": "skouassi@gmail.com",
+            "country": "Abobo",
+            "street": "akeikoi",
+            "city": "ssss",
+            "phone": "5897632144",
+            "pinCode": "0170047785"
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "kouame",
+        "email": "skouassi@gmail.com",
+        "country": "Abobo",
+        "street": "akeikoi",
+        "city": "ssss",
+        "phone": "5897632144",
+        "pinCode": "0170047785"
+      },
+      "status": "pending",
+      "id": 8
+    },
+    {
+      "items": [
+        {
+          "title": "MacBook Pro",
+          "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
+          "price": 1749,
+          "discountPercentage": 11.02,
+          "rating": 4.57,
+          "stock": 83,
+          "brand": "Apple",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
+          "images": [
+            "https://i.dummyjson.com/data/products/6/1.png",
+            "https://i.dummyjson.com/data/products/6/2.jpg",
+            "https://i.dummyjson.com/data/products/6/3.png",
+            "https://i.dummyjson.com/data/products/6/4.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 21
+        }
+      ],
+      "totalAmount": 1749,
+      "totalItems": 1,
+      "user": {
+        "email": "batirem01@gmail.com",
+        "password": "Yk48976031",
+        "addresses": [
+          {
+            "name": "yao kouassi stephane",
+            "email": "kouassistephane489@gmail.com",
+            "country": "Cocody",
+            "street": "riviera 3",
+            "city": "bonoumin",
+            "phone": "0748976031",
+            "pinCode": "0170047785"
+          },
+          {
+            "name": "kouame",
+            "email": "skouassi@gmail.com",
+            "country": "Abobo",
+            "street": "akeikoi",
+            "city": "ssss",
+            "phone": "5897632144",
+            "pinCode": "0170047785"
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "yao kouassi stephane",
+        "email": "kouassistephane489@gmail.com",
+        "country": "Cocody",
+        "street": "riviera 3",
+        "city": "bonoumin",
+        "phone": "0748976031",
+        "pinCode": "0170047785"
+      },
+      "status": "pending",
+      "id": 9
+    },
+    {
+      "items": [
+        {
+          "title": "Kabir Singh Square Sunglass",
+          "description": "Orignal Metal Kabir Singh design 2020 Sunglasses Men Brand Designer Sun Glasses Kabir Singh Square Sunglass",
+          "price": 50,
+          "discountPercentage": 15.6,
+          "rating": 4.62,
+          "stock": 78,
+          "brand": "Designer Sun Glasses",
+          "category": "sunglasses",
+          "thumbnail": "https://i.dummyjson.com/data/products/82/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/82/1.jpg",
+            "https://i.dummyjson.com/data/products/82/2.webp",
+            "https://i.dummyjson.com/data/products/82/3.jpg",
+            "https://i.dummyjson.com/data/products/82/4.jpg",
+            "https://i.dummyjson.com/data/products/82/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 21
+        },
+        {
+          "title": "Kabir Singh Square Sunglass",
+          "description": "Orignal Metal Kabir Singh design 2020 Sunglasses Men Brand Designer Sun Glasses Kabir Singh Square Sunglass",
+          "price": 50,
+          "discountPercentage": 15.6,
+          "rating": 4.62,
+          "stock": 78,
+          "brand": "Designer Sun Glasses",
+          "category": "sunglasses",
+          "thumbnail": "https://i.dummyjson.com/data/products/82/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/82/1.jpg",
+            "https://i.dummyjson.com/data/products/82/2.webp",
+            "https://i.dummyjson.com/data/products/82/3.jpg",
+            "https://i.dummyjson.com/data/products/82/4.jpg",
+            "https://i.dummyjson.com/data/products/82/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 22
+        }
+      ],
+      "totalAmount": 100,
+      "totalItems": 2,
+      "user": {
+        "email": "batirem01@gmail.com",
+        "password": "Yk48976031",
+        "addresses": [
+          {
+            "name": "yao kouassi steph",
+            "email": "kouassistephane489@gmail.com",
+            "country": "Abobo",
+            "street": "Cocody ",
+            "city": "bonoumin",
+            "phone": "0748976031",
+            "pinCode": "0170047785",
+            "commune": "bonoumin",
+            "sous-quartier": "riviera 3",
+            "numero": "0748976031",
+            "second numero": "0170047785"
+          },
+          {
+            "name": "STEPHANE YAO",
+            "email": "stephane@gmail.com",
+            "country": "Abobo",
+            "street": "sogefia",
+            "city": "plaque 1",
+            "phone": "055525622",
+            "pinCode": "551451454"
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "STEPHANE YAO",
+        "email": "stephane@gmail.com",
+        "country": "Abobo",
+        "street": "sogefia",
+        "city": "plaque 1",
+        "phone": "055525622",
+        "pinCode": "551451454"
+      },
+      "status": "pending",
+      "id": 10
+    },
+    {
+      "items": [
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 10,
+          "id": 23
+        }
+      ],
+      "totalAmount": 899,
+      "totalItems": 1,
+      "user": {
+        "email": "admin@gmail.com",
+        "password": "Ys48976031",
+        "role": "admin",
+        "addresses": [
+          {
+            "name": "yao",
+            "email": "skouassi879@gmail.com",
+            "country": "Cocody",
+            "street": "bonoumin",
+            "city": "saint famille",
+            "phone": "0748976031",
+            "pinCode": "ssssssssss"
+          }
+        ],
+        "id": 10
+      },
+      "paymentMethod": "card",
+      "selectedAddress": {
+        "name": "yao",
+        "email": "skouassi879@gmail.com",
+        "country": "Cocody",
+        "street": "bonoumin",
+        "city": "saint famille",
+        "phone": "0748976031",
+        "pinCode": "ssssssssss"
+      },
+      "status": "cancelled",
+      "id": 11
+    },
+    {
+      "items": [
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 2,
+          "user": 10,
+          "id": 23
+        }
+      ],
+      "totalAmount": 1476,
+      "totalItems": 2,
+      "user": {
+        "email": "admin@gmail.com",
+        "password": "Ys48976031",
+        "role": "admin",
+        "addresses": [
+          {
+            "name": "yao",
+            "email": "skouassi879@gmail.com",
+            "country": "Cocody",
+            "street": "bonoumin",
+            "city": "saint famille",
+            "phone": "0748976031",
+            "pinCode": "ssssssssss"
+          }
+        ],
+        "id": 10
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "yao",
+        "email": "skouassi879@gmail.com",
+        "country": "Cocody",
+        "street": "bonoumin",
+        "city": "saint famille",
+        "phone": "0748976031",
+        "pinCode": "ssssssssss"
+      },
+      "status": "pending",
+      "id": 12
+    },
+    {
+      "items": [
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 21
+        },
+        {
+          "title": "Samsung Universe 9",
+          "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+          "price": 1249,
+          "discountPercentage": 15.46,
+          "rating": 4.09,
+          "stock": 36,
+          "brand": "Samsung",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/3/1.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 22
+        }
+      ],
+      "totalAmount": 1794,
+      "totalItems": 2,
+      "user": {
+        "email": "batirem01@gmail.com",
+        "password": "Yk48976031",
+        "role": "user",
+        "addresses": [
+          {
+            "name": "yao kouassi steph",
+            "email": "kouassistephane489@gmail.com",
+            "country": "Abobo",
+            "street": "Cocody ",
+            "city": "bonoumin",
+            "phone": "0748976031",
+            "pinCode": "0170047785",
+            "commune": "bonoumin",
+            "sous-quartier": "riviera 3",
+            "numero": "0748976031",
+            "second numero": "0170047785"
+          },
+          {
+            "name": "STEPHANE YAO",
+            "email": "stephane@gmail.com",
+            "country": "Abobo",
+            "street": "sogefia",
+            "city": "plaque 1",
+            "phone": "055525622",
+            "pinCode": "551451454"
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "yao kouassi steph",
+        "email": "kouassistephane489@gmail.com",
+        "country": "Abobo",
+        "street": "Cocody ",
+        "city": "bonoumin",
+        "phone": "0748976031",
+        "pinCode": "0170047785",
+        "commune": "bonoumin",
+        "sous-quartier": "riviera 3",
+        "numero": "0748976031",
+        "second numero": "0170047785"
+      },
+      "status": "pending",
+      "id": 13
     }
   ]
 }
