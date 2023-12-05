@@ -14,15 +14,12 @@ exports.fetchCategories = async (req, res) => {
 
 exports.createCategory = async (req, res) => {
     // this product we have to get from API body
-    const category = new Category(req.body)
-
+    const category = new Category(req.body);
     try {
         const doc = await category.save();
         res.status(201).json(doc);
     } catch (err) {
         res.status(400).json(err);
     }
-
-
 };
 
