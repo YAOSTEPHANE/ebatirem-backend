@@ -1,7 +1,8 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { createUser, signOut } from './authAPI';
-import { checkUser } from './authAPI';
 import { updateUser} from './../user/userAPI';
+import {checkUser} from './authAPI';
+
 
 
 const initialState = {
@@ -29,10 +30,15 @@ export const updateUserAsync = createAsyncThunk(
 
 export const checkUserAsync = createAsyncThunk(
   'user/checkUser',
-  async (loginInfo) => {
-    const response = await checkUser(loginInfo);
-    // The value we return becomes the `fulfilled` action payload
-    return response.data;
+  async (loginInfo, {rejectWithValue}) => {
+    try{
+      const response = await checkUser(loginInfo);
+      return response.data;
+    }catch(error){
+      console.log(error)
+      return rejectWithValue(error)
+    }
+   
   }
 );
 
@@ -75,7 +81,7 @@ export const authSlice = createSlice({
       })
       .addCase(checkUserAsync.rejected, (state, action) => {
         state.status = 'idle';
-        state.error = action.error;
+        state.error = action.payload;
         
       })
       

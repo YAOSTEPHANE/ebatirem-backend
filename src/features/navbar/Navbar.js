@@ -10,7 +10,7 @@ import { selectLoggedInUser } from "../auth/authSlice";
 const navigation = [
     { name: 'Produits', link:'/', user: true},
     
-    { name: 'Products', link: '/admin', admin: true},
+    { name: 'Produits', link: '/admin', admin: true},
     { name: 'Commandes', link: '/admin/orders', admin: true},
 
 ];
@@ -31,7 +31,7 @@ function NavBar({ children }) {
     return (
         <>
             <div className="min-h-full">
-                <Disclosure as="nav" className="bg-blue-800">
+                <Disclosure as="nav" className="bg-gray-800">
                     {({ open }) => (
                         <>
                             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
