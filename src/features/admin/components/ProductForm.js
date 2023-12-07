@@ -6,8 +6,9 @@ import { useDispatch } from 'react-redux';
 import { } from '../../product/productSlice';
 import { fetchProductByIdAsync, selectProductById, createProductAsync, updateProductAsync } from '../../product/productSlice';
 import { useParams } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { clearSelectedProduct } from '../../product/productSlice';
+import Modal from '../../common/Modal';
 
 
 function ProductForm() {
@@ -18,6 +19,7 @@ function ProductForm() {
     const dispatch = useDispatch();
     const params = useParams();
     const selectedProduct = useSelector(selectProductById);
+    const [openModal, setOpenModal] = useState(null);
 
 
 

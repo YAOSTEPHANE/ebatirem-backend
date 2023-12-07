@@ -6,7 +6,6 @@ import { useForm } from "react-hook-form";
 import { selectError, selectLoggedInUser } from './../authSlice';
 import { Navigate } from 'react-router-dom';
 
-
 export default function Login() {
   const dispatch = useDispatch();
   const error = useSelector(selectError)
@@ -14,7 +13,6 @@ export default function Login() {
   const { register, handleSubmit, formState: { errors } } = useForm();
 
   console.log(errors);
-
 
   return (
     <>

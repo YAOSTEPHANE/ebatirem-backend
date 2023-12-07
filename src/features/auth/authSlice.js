@@ -34,13 +34,11 @@ export const checkUserAsync = createAsyncThunk(
     try{
       const response = await checkUser(loginInfo);
       return response.data;
-    }catch(error){
+    } catch(error){
       console.log(error)
       return rejectWithValue(error)
     }
-   
-  }
-);
+  });
 
 export const signOutAsync = createAsyncThunk(
   'user/signOut',
