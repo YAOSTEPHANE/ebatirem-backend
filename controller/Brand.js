@@ -13,7 +13,7 @@ exports.fetchBrands = async (req, res) => {
 };
 exports.createBrand = async (req, res) => {
     // this product we have to get from API body
-    const brand = new Brand(req.body)
+    const brand = new Brand(req.body);
 
     try {
         const doc = await brand.save();
