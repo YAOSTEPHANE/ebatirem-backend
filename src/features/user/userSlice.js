@@ -75,7 +75,7 @@ export const userSlice = createSlice({
   },
 });
 
-
+// TODO: change orders and address to be more generic
 export const selectUserOrders = (state) => state.user.userOrders;
 export const selectUserInfo = (state) => state.user.userInfo;
 export const { increment } = userSlice.actions;

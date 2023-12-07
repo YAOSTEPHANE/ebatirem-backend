@@ -43,7 +43,7 @@ function Checkout() {
                 items,
                 totalAmount,
                 totalItems,
-                user,
+                user:user.id,
                 paymentMethod,
                 selectedAddress,
                 status: 'pending'// other status can be delivered, received. 
