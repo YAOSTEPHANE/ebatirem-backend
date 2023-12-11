@@ -2,7 +2,7 @@ import { Link, Navigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectItems, updateCartAsync, deleteItemFromCartAsync } from '../features/cart/cartSlice';
 import { useForm } from 'react-hook-form';
-import { updateUserAsync } from '../features/auth/authSlice';
+import { updateUserAsync } from '../features/user/userSlice';
 import { createOrderAsync, selectCurrentOrder } from '../features/order/orderSlice';
 import { useState } from 'react';
 import { selectUserInfo } from '../features/user/userSlice';

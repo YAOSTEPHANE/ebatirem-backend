@@ -6,7 +6,7 @@ import { useForm } from 'react-hook-form';
 
 export default function UserProfile() {
     const dispatch = useDispatch();
-    const user = useSelector(selectUserInfo);
+    const userInfo = useSelector(selectUserInfo);
     const [selectedEditIndex, setSelectedEditIndex] = useState(-1);
     const [showAddAddressForm, setShowAddAddressForm] = useState(false);
 
@@ -15,7 +15,7 @@ export default function UserProfile() {
     const { register, handleSubmit, setValue, reset, formState: { errors } } = useForm();
 
     const handleEdit = (addressUpdate, index) => {
-        const newUser = { ...user, addresses: [...user.addresses] } // for shallow copy issue
+        const newUser = { ...userInfo, addresses: [...userInfo.addresses] } // for shallow copy issue
         newUser.addresses.splice(index, 1, addressUpdate);
         dispatch(updateUserAsync(newUser));
         setSelectedEditIndex(-1);
@@ -23,14 +23,14 @@ export default function UserProfile() {
 
     }
     const handleRemove = (e, index) => {
-        const newUser = { ...user, addresses: [...user.addresses] } // for shallow copy issue
+        const newUser = { ...userInfo, addresses: [...userInfo.addresses] } // for shallow copy issue
         newUser.addresses.splice(index, 1);
         dispatch(updateUserAsync(newUser));
 
     };
     const handleEditForm = (index) => {
         setSelectedEditIndex(index);
-        const address = user.addresses[index];
+        const address = userInfo.addresses[index];
         setValue('name', address.name)
         setValue('email', address.email)
         setValue('commune', address.city)
@@ -40,7 +40,7 @@ export default function UserProfile() {
         setValue('second numero', address.pinCode)
     };
     const handleAdd = (address) => {
-        const newUser = { ...user, addresses: [...user.addresses, address] };
+        const newUser = { ...userInfo, addresses: [...userInfo.addresses, address] };
         dispatch(updateUserAsync(newUser));
         setShowAddAddressForm(false);
     }
@@ -53,9 +53,9 @@ export default function UserProfile() {
         <div>
             <div className="mx-auto mt-12 bg-white max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
-                    <h1 className="text-4xl my-5 font-bold tracking-tight text-gray-900">Nom : {user.name ? user.name : 'Nouvel Utilisateur'}</h1>
-                    <h3 className="text-xl my-5 font-bold tracking-tight text-red-600">Addresse Email : {user.email}</h3>
-                    {user.role === 'admin' && <h3 className="text-xl my-5 font-bold tracking-tight text-red-600"> role : {user.role} </h3>}
+                    <h1 className="text-4xl my-5 font-bold tracking-tight text-gray-900">Nom : {userInfo.name ? userInfo.name : 'Nouvel Utilisateur'}</h1>
+                    <h3 className="text-xl my-5 font-bold tracking-tight text-red-600">Addresse Email : {userInfo.email}</h3>
+                    {userInfo.role === 'admin' && <h3 className="text-xl my-5 font-bold tracking-tight text-red-600"> role : {userInfo.role} </h3>}
 
                 </div>
                 <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
@@ -236,7 +236,7 @@ export default function UserProfile() {
                                         Choisir parmi une adresse existante
                                     </p>
                                     <ul role="list">
-                                        {user.addresses.map((address, index) => (
+                                        {userInfo.addresses.map((address, index) => (
                                             <li key={index} className="flex justify-between gap-x-6 px-5 py-5 border-solid border-2 border-gray-200">
                                                 <div className="flex min-w-0 gap-x-4">
                                                     <input
@@ -315,7 +315,7 @@ export default function UserProfile() {
                         </form >
                     ) : null}
                     <p className="mt-0.5 text-sm text-gray-500">Tes addresses.</p>
-                    {user.addresses.map((address, index) => (
+                    {userInfo.addresses.map((address, index) => (
                         <div>
                             {selectedEditIndex === index ? (
                                 <form
