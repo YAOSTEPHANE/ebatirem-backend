@@ -1,21 +1,21 @@
 import { Link, Navigate, useParams} from 'react-router-dom';
 import { useEffect } from 'react';
 import { resetCartAsync } from './../features/cart/cartSlice';
-import { useDispatch, useSelector } from 'react-redux';
-import { selectLoggedInUser } from './../features/auth/authSlice';
+import { useDispatch} from 'react-redux';
 import { resetOrder } from './../features/order/orderSlice';
 
 function OrderSuccessPage(){
    const params = useParams()
     const dispatch = useDispatch();
-    const user = useSelector(selectLoggedInUser);
+
    
    useEffect(() => {
     // reset cart
-    dispatch(resetCartAsync(user.id));
+    dispatch(resetCartAsync())
     // reset currentOrder
     dispatch(resetOrder())
-   }, [dispatch,user])
+   }, [dispatch])
+
     return (
       <>
         {!params.id && <Navigate to='/' replace={true}></Navigate>}
@@ -23,7 +23,9 @@ function OrderSuccessPage(){
         <div className="text-center">
           <p className="text-base font-semibold text-indigo-600">Commande passée avec succes</p>
           <h1 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Commande Numero #{params?.id}</h1>
-          <p className="mt-6 text-base leading-7 text-gray-600">Vous pouvez vérifier votre commande sur votre compte > Mes Commandes</p>
+          <p className="mt-6 text-base leading-7 text-gray-600">
+            Vous pouvez vérifier votre commande sur votre compte > Mes Commandes
+            </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Link
               to='/'
